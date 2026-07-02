@@ -85,15 +85,15 @@ const EventDetails = () => {
           // Send confirmation email using EmailJS
           emailjs
             .send(
-              "service_qzqjxtb", // Replace with your EmailJS service ID
-              "template_6yzu07p", // Replace with your EmailJS template ID
+              "", // Replace with your EmailJS service ID
+              "", // Replace with your EmailJS template ID
               {
                 to_email: userEmail,
                 event_name: event.title,
                 event_place: event.location,
                 qr_code_url: qrCodeImageUrl,
               },
-              "QmqHaF-cBNHGhwREg" // Replace with your EmailJS user ID
+              "" // Replace with your EmailJS user ID
             )
             .then(() => {
               alert("✅ Registration successful! A confirmation email has been sent.");
